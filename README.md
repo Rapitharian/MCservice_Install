@@ -22,3 +22,9 @@ mv $HOME/MCservice_Install/MCservice.sh $HOME
 chmod +x MCservice.sh
 ./MCservice.sh 2>&1 | tee -a MCservice_Install.log
 </pre>
+
+<b><u>Screen usage:</u></b><br>
+To connect to the screen from a terminal type "screen -r"<br>
+To detach from a screen press "CTRL+A+D"
+To list the available screens type "screen -ls"
+To connect to a session type "screen -r NUMBERofTHEsession"
