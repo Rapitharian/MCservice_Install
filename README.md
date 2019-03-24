@@ -33,6 +33,6 @@ rm MCservice_Install.log
 
 <b><u>Screen usage:</u></b><br>
 To connect to the screen from a terminal type "screen -r"<br>
-To detach from a screen press "CTRL+A+D"
-To list the available screens type "screen -ls"
-To connect to a session type "screen -r NUMBERofTHEsession"
+To detach from a screen press "CTRL+A+D"<br>
+To list the available screens type "screen -ls"<br>
+To connect to a session type "screen -r NUMBERofTHEsession"<br>
