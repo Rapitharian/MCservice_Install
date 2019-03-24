@@ -1,5 +1,7 @@
 #!/bin/bash
 # ./MCservice.sh 2>&1 | tee -a MCservice_Install.log
+read -e -p "What user was used to install minecraft? [$USER]: " User1
+User1=${USER1:-$USER}
 # Install screen.
 sudo yum -y install screen
 # Create the minecraft service file.
@@ -11,8 +13,8 @@ After=network.target
 [Service]
 WorkingDirectory=$HOME/%i
 PrivateUsers=true # Users Database is not available for within the unit, only root and minecraft is available, everybody else is nobody
-User=minecraft
-Group=minecraft
+User=$User1
+Group=$User1
 ProtectSystem=full # Read only mapping of /usr /boot and /etc
 #ProtectHome=true # /home, /root and /run/user seem to be empty from within the unit. It is recommended to enable this setting for all long-running services (in particular network-facing ones).
 ProtectKernelTunables=true # /proc/sys, /sys, /proc/sysrq-trigger, /proc/latency_stats, /proc/acpi, /proc/timer_stats, /proc/fs and /proc/irq will be read-only within the unit. It is recommended to turn this on for most services.
