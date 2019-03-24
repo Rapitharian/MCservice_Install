@@ -44,6 +44,7 @@ To detach from a screen press "CTRL+A+D"<br>
 To list the available screens type "screen -ls"<br>
 To connect to a session type "screen -r NUMBERofTHEsession"<br>
 
+<b><u>Sysytemctl (service control) usage:</u></b><br>
 Check Status of the minecraft server service: systemctl status minecraft@spigotmc<br>
 Start the minecraft server service: systemctl start minecraft@spigotmc<br>
 Stop the minecraft server service: systemctl stop minecraft@spigotmc<br>
