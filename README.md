@@ -24,8 +24,8 @@ chmod +x MCservice.sh
 </pre>
 
 <b><u>Cleanup:</u></b><br>
-Remove the installation script MCservice.sh
-If you don't need the installation log, remove that as well.
+Remove the installation script MCservice.sh<br>
+If you don't need the installation log, remove that as well.<br>
 <pre>
 rm MCservice.sh
 rm MCservice_Install.log
