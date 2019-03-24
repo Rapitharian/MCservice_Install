@@ -23,6 +23,14 @@ chmod +x MCservice.sh
 ./MCservice.sh 2>&1 | tee -a MCservice_Install.log
 </pre>
 
+<b><u>Cleanup:</u></b><br>
+Remove the installation script MCservice.sh
+If you don't need the installation log, remove that as well.
+<pre>
+rm MCservice.sh
+rm MCservice_Install.log
+</pre>
+
 <b><u>Screen usage:</u></b><br>
 To connect to the screen from a terminal type "screen -r"<br>
 To detach from a screen press "CTRL+A+D"
