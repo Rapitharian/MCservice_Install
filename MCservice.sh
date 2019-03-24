@@ -43,6 +43,8 @@ sudo mv $HOME/minecraft@.service /etc/systemd/system/minecraft@.service
 sudo chown root:root /etc/systemd/system/minecraft@.service
 # Reload systemd units
 sudo systemctl daemon-reload
+# Remove the MCservice_Install directory.
+sudo rm -rf $HOME/MCservice_Install
 # Start the server.
 sudo systemctl start minecraft@spigotmc
 # Enable (start after boot) the server.
