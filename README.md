@@ -23,6 +23,13 @@ chmod +x MCservice.sh
 ./MCservice.sh 2>&1 | tee -a MCservice_Install.log
 </pre>
 
+<b><u>Test Installation:</u></b><br>
+Check to ensure the service started.<br>
+Assuming the service is active, connect to the active screen.<br>
+<pre>
+systemctl status minecraft@spigotmc 2>&1 | tee -a MCservice_Install.log
+screen -r
+</pre>
 <b><u>Cleanup:</u></b><br>
 Remove the installation script MCservice.sh<br>
 If you don't need the installation log, remove that as well.<br>
@@ -36,3 +43,8 @@ To connect to the screen from a terminal type "screen -r"<br>
 To detach from a screen press "CTRL+A+D"<br>
 To list the available screens type "screen -ls"<br>
 To connect to a session type "screen -r NUMBERofTHEsession"<br>
+
+Check Status of the minecraft server service: systemctl status minecraft@spigotmc<br>
+Start the minecraft server service: systemctl start minecraft@spigotmc<br>
+Stop the minecraft server service: systemctl stop minecraft@spigotmc<br>
+Restart the minecraft server service: systemctl restart minecraft@spigotmc<br>
